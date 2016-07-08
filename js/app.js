@@ -12,15 +12,15 @@
     	url:'/index',
     	abstract:true,
     	templateUrl:'view/app.html',
-    	
+    	controller:'appCtrl'
     }).state('index.list',{
-    	url:'/list',
-    	templateUrl:'view/list.html'
+    	url:'/list/:Id',  //这有一个接受参数的变量名
+    	templateUrl:'view/list.html',
+        controller:'listCtrl'
     }).state('index.list2',{
     	url:'/list2',
     	templateUrl:'view/list2.html'
     })
-
 
 
 
